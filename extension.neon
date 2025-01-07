@@ -360,3 +360,8 @@ services:
 	-
 		factory: PHPStan\Type\Symfony\ExtensionGetConfigurationReturnTypeExtension
 		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
+
+	-
+		class: PHPStan\Symfony\SymfonyContainerResultCacheMetaExtension
+		tags:
+			- phpstan.resultCacheMetaExtension
